@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: LoginPage(),
+      theme: ThemeData(primarySwatch: Colors.grey),
     );
   }
 }
