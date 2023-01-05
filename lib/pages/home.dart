@@ -5,7 +5,7 @@ import 'package:spotiapp/utils/bubble_stories.dart';
 import 'package:spotiapp/utils/user_post.dart';
 
 class UserHome extends StatelessWidget {
-  final List people = ['efe', 'bugra', 'anan', 'abc', 'wuhuu'];
+  final List people = ['efe', 'bugra', 'damn', 'abc', 'wuhuu'];
 
   @override
   Widget build(BuildContext context) {
@@ -17,18 +17,18 @@ class UserHome extends StatelessWidget {
         title:
             Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
           Text(
-            'instagram',
+            'fakegram',
             style: TextStyle(color: Colors.black),
           ),
           Row(
             // ignore: prefer_const_literals_to_create_immutables
             children: [
-              Icon(Icons.add),
+              /*Icon(Icons.add),
               Padding(
                 padding: const EdgeInsets.all(15.0),
                 child: Icon(Icons.favorite),
               ),
-              Icon(Icons.share),
+              Icon(Icons.share),*/
             ],
           ),
         ]),

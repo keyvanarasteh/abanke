@@ -40,11 +40,12 @@ class _HomepageState extends State<Homepage> {
         type: BottomNavigationBarType.fixed,
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'home'),
-          BottomNavigationBarItem(icon: Icon(Icons.search), label: 'search'),
+          BottomNavigationBarItem(icon: Icon(Icons.person), label: 'YOU'),
           BottomNavigationBarItem(
-              icon: Icon(Icons.video_call), label: 'videos'),
-          BottomNavigationBarItem(icon: Icon(Icons.shop), label: 'shop'),
-          BottomNavigationBarItem(icon: Icon(Icons.person), label: 'account'),
+              icon: Icon(Icons.video_call), label: 'page44'),
+          BottomNavigationBarItem(icon: Icon(Icons.shop), label: 'page33'),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.settings), label: 'Settings'),
         ],
       ),
     );

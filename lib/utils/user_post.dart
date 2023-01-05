@@ -1,9 +1,21 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
-class user_posts extends StatelessWidget {
+class user_posts extends StatefulWidget {
   final String name;
 
   user_posts({required this.name});
+
+  @override
+  State<user_posts> createState() => _user_postsState();
+}
+
+class _user_postsState extends State<user_posts> {
+  bool _isbuttonpressed = false;
+
+  final imager = Image.network(
+      'https://lolstatic-a.akamaihd.net/frontpage/apps/prod/rg-champion-aatrox/tr_TR/5b922bef08881410f8fffa7273c30a75dfb1d11f/assets/img/share/share-1200x630.jpg');
 
   @override
   Widget build(BuildContext context) {
@@ -18,33 +30,42 @@ class user_posts extends StatelessWidget {
               Row(
                 children: [
                   //pp
-                  Container(
-                    width: 40,
-                    height: 40,
-                    decoration: BoxDecoration(
-                      color: Colors.grey[300],
-                      shape: BoxShape.circle,
+                  Transform(
+                    transform: Matrix4.identity()..scale(1.3),
+                    child: Chip(
+                      elevation: 25,
+                      backgroundColor: Colors.deepOrange[100],
+                      label: Text(widget.name),
+                      avatar: CircleAvatar(
+                        backgroundImage: imager.image,
+                        //radius: 22,
+                      ),
                     ),
                   ),
-                  SizedBox(
+                  /*SizedBox(
                     width: 10,
-                  ),
+                  ),*/
                   //name
-                  Text(
+                  /*Text(
                     name,
                     style: TextStyle(fontWeight: FontWeight.bold),
-                  ),
+                  ),*/
                 ],
               ),
               Icon(Icons.menu)
             ],
           ),
         ),
+
         //post
-        Container(
-          height: 400,
-          color: Colors.grey[300],
-        ),
+
+        Card(
+            clipBehavior: Clip.antiAlias,
+            shape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(24)),
+            child: Image(
+              image: imager.image,
+            )),
 
         Padding(
           padding: const EdgeInsets.all(16.0),
@@ -53,12 +74,16 @@ class user_posts extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  Icon(Icons.favorite),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 12.0),
-                    child: Icon(Icons.chat_bubble_outline),
-                  ),
-                  Icon(Icons.share),
+                  ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                          backgroundColor:
+                              _isbuttonpressed ? Colors.green : Colors.blue),
+                      onPressed: () {
+                        setState(() {
+                          _isbuttonpressed = !_isbuttonpressed;
+                        });
+                      },
+                      child: Text('Like'))
                 ],
               ),
               Icon(Icons.bookmark),
@@ -92,7 +117,8 @@ class user_posts extends StatelessWidget {
             child: RichText(
               text: TextSpan(style: TextStyle(color: Colors.black), children: [
                 TextSpan(
-                    text: name, style: TextStyle(fontWeight: FontWeight.bold)),
+                    text: widget.name,
+                    style: TextStyle(fontWeight: FontWeight.bold)),
                 TextSpan(text: 'heloooooooooooooooooooooooo'),
               ]),
             )),
