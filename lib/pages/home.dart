@@ -1,11 +1,11 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:spotiapp/utils/bubble_stories.dart';
+import 'package:spotiapp/utils/later/bubble_stories.dart';
 import 'package:spotiapp/utils/user_post.dart';
 
 class UserHome extends StatelessWidget {
-  final List people = ['efe', 'bugra', 'damn', 'abc', 'wuhuu'];
+  final List people = ['efe', 'bugra', 'ali', 'ece', 'polat'];
 
   @override
   Widget build(BuildContext context) {
@@ -35,15 +35,14 @@ class UserHome extends StatelessWidget {
       ),
       body: Column(
         children: [
-          //story
-          Container(
+          /*Container(
               height: 130,
               child: ListView.builder(
                   scrollDirection: Axis.horizontal,
                   itemCount: people.length,
                   itemBuilder: (context, index) {
                     return Bubble(text: people[index]);
-                  })),
+                  })),*/
           //posts
 
           Expanded(

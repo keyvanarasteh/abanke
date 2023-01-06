@@ -29,7 +29,7 @@ class _AccountState extends State<Account> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text('idk'),
+                  Text('Data paylasimi'),
                   Switch(
                       value: value1,
                       onChanged: (bool state) {

@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 
-import '../utils/explore_grid.dart';
+import '../utils/card_image.dart';
 
 class Search extends StatefulWidget {
   @override
@@ -10,6 +10,8 @@ class Search extends StatefulWidget {
 }
 
 class _SearchState extends State<Search> {
+  //image setter
+  //Future setImage(Image image) async {}
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
@@ -43,7 +45,7 @@ class _SearchState extends State<Search> {
               child: TabBar(
                 indicatorColor: Colors.green,
                 isScrollable: true,
-                tabs: [Tab(text: 'deneme1'), Tab(text: 'deneme2')],
+                tabs: [Tab(text: 'Pictures'), Tab(text: 'About')],
               ),
             ),
           ),
@@ -56,12 +58,12 @@ class _SearchState extends State<Search> {
                   children: [
                     //1.tab
                     Wrap(
-                        children: List.generate(20, (index) {
+                        children: List.generate(10, (index) {
                       return ExploreGrid();
                     })),
 
                     //2.tab
-                    Text('TEST')
+                    Text('hi, i am a proffessional photographer')
                   ],
                 ),
               ),

@@ -52,7 +52,7 @@ class _user_postsState extends State<user_posts> {
                   ),*/
                 ],
               ),
-              Icon(Icons.menu)
+              //Icon(Icons.menu)
             ],
           ),
         ),
@@ -68,7 +68,7 @@ class _user_postsState extends State<user_posts> {
             )),
 
         Padding(
-          padding: const EdgeInsets.all(16.0),
+          padding: const EdgeInsets.all(10.0),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -86,14 +86,14 @@ class _user_postsState extends State<user_posts> {
                       child: Text('Like'))
                 ],
               ),
-              Icon(Icons.bookmark),
+              //Icon(Icons.bookmark),
             ],
           ),
         ),
 
         //like
 
-        Padding(
+        /*Padding(
           padding: const EdgeInsets.only(left: 16.0),
           child: Row(
             children: [
@@ -121,7 +121,7 @@ class _user_postsState extends State<user_posts> {
                     style: TextStyle(fontWeight: FontWeight.bold)),
                 TextSpan(text: 'heloooooooooooooooooooooooo'),
               ]),
-            )),
+            )),*/
       ],
     );
   }

@@ -1,10 +1,9 @@
 // ignore_for_file: prefer_const_constructors, file_names, prefer_const_literals_to_create_immutables, prefer_final_fields
 
 import 'package:flutter/material.dart';
-import 'package:spotiapp/pages/account.dart';
+import 'package:spotiapp/pages/Settings.dart';
 import 'package:spotiapp/pages/home.dart';
-import 'package:spotiapp/pages/search.dart';
-import 'package:spotiapp/pages/shop.dart';
+import 'package:spotiapp/pages/Profile.dart';
 import 'package:spotiapp/pages/image_load.dart';
 
 class Homepage extends StatefulWidget {
@@ -22,18 +21,12 @@ class _HomepageState extends State<Homepage> {
     });
   }
 
-  final List<Widget> _children = [
-    UserHome(),
-    Search(),
-    Videos(),
-    Shop(),
-    Account()
-  ];
+  final List<Widget> _children = [UserHome(), Search(), Videos(), Account()];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: _children[_selectedIndex],
+      body: IndexedStack(index: _selectedIndex, children: _children),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _selectedIndex,
         onTap: _navigateBottomNavBar,
@@ -43,7 +36,6 @@ class _HomepageState extends State<Homepage> {
           BottomNavigationBarItem(icon: Icon(Icons.person), label: 'YOU'),
           BottomNavigationBarItem(
               icon: Icon(Icons.video_call), label: 'page44'),
-          BottomNavigationBarItem(icon: Icon(Icons.shop), label: 'page33'),
           BottomNavigationBarItem(
               icon: Icon(Icons.settings), label: 'Settings'),
         ],
