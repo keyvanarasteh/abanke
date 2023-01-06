@@ -31,6 +31,7 @@ class _AccountState extends State<Account> {
                 children: [
                   Text('Data paylasimi'),
                   Switch(
+                      activeColor: Colors.green,
                       value: value1,
                       onChanged: (bool state) {
                         setState(() {
@@ -43,7 +44,7 @@ class _AccountState extends State<Account> {
           ),
           Column(
             children: [
-              Text('Renk secimi yap: '),
+              Text('menu icin renk secimi yap: '),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20.0),
                 child: DropdownButtonFormField(
@@ -66,6 +67,7 @@ class _AccountState extends State<Account> {
           Column(
             children: [
               CheckboxListTile(
+                  activeColor: Colors.green,
                   title: Text('Sesler'),
                   value: valuecheck,
                   onChanged: (newstate) {

@@ -11,7 +11,7 @@ class ExploreGrid extends StatelessWidget {
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24)),
         child: SizedBox(
           height: 100,
-          width: 100,
+          width: 107,
           child: CupertinoContextMenu(
             child: ClipRRect(
               child: Opacity(

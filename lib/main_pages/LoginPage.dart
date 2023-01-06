@@ -29,7 +29,7 @@ class _LoginPageState extends State<LoginPage> {
                   size: 100,
                 ),
                 Text(
-                  "hi hello",
+                  "fakegram",
                   style: GoogleFonts.bebasNeue(
                     fontSize: 50,
                   ),
@@ -142,6 +142,7 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                     Text(
                       " Kayit ol",
+                      //go register screen
                       style: TextStyle(
                           color: Colors.blue, fontWeight: FontWeight.bold),
                     )

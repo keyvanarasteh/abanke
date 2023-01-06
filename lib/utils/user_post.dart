@@ -52,7 +52,7 @@ class _user_postsState extends State<user_posts> {
                   ),*/
                 ],
               ),
-              //Icon(Icons.menu)
+              Icon(Icons.menu)
             ],
           ),
         ),
@@ -86,25 +86,25 @@ class _user_postsState extends State<user_posts> {
                       child: Text('Like'))
                 ],
               ),
-              //Icon(Icons.bookmark),
+              Icon(Icons.bookmark),
             ],
           ),
         ),
 
         //like
 
-        /*Padding(
+        Padding(
           padding: const EdgeInsets.only(left: 16.0),
           child: Row(
             children: [
               Text('liked by'),
               Text(
-                'abanke',
+                ' abanke',
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
-              Text('liked by'),
+              Text(' liked by'),
               Text(
-                'others',
+                ' others',
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
             ],
@@ -119,9 +119,9 @@ class _user_postsState extends State<user_posts> {
                 TextSpan(
                     text: widget.name,
                     style: TextStyle(fontWeight: FontWeight.bold)),
-                TextSpan(text: 'heloooooooooooooooooooooooo'),
+                TextSpan(text: ' heloooooooooooooooooooooooo'),
               ]),
-            )),*/
+            )),
       ],
     );
   }
