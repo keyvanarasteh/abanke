@@ -5,7 +5,7 @@ import 'package:spotiapp/pages/account.dart';
 import 'package:spotiapp/pages/home.dart';
 import 'package:spotiapp/pages/search.dart';
 import 'package:spotiapp/pages/shop.dart';
-import 'package:spotiapp/pages/videos.dart';
+import 'package:spotiapp/pages/image_load.dart';
 
 class Homepage extends StatefulWidget {
   const Homepage({super.key});

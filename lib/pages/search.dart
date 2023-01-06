@@ -51,7 +51,7 @@ class _SearchState extends State<Search> {
             child: SizedBox(
               height: 800,
               child: Padding(
-                padding: const EdgeInsets.all(50.0),
+                padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: TabBarView(
                   children: [
                     //1.tab
