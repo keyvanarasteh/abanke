@@ -38,7 +38,7 @@ class _LoginPageState extends State<LoginPage> {
                 SizedBox(height: 10),
 
                 Text(
-                  "hos geldin",
+                  "Hoş Geldin!",
                   style: TextStyle(
                     fontSize: 24,
                   ),
@@ -64,7 +64,7 @@ class _LoginPageState extends State<LoginPage> {
                             size: 20,
                           ),
                           border: InputBorder.none,
-                          hintText: 'Email',
+                          hintText: 'email',
                         ),
                       ),
                     ),
@@ -119,7 +119,7 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                       child: Center(
                         child: Text(
-                          'sign in',
+                          'Giriş Yap',
                           style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
@@ -137,7 +137,7 @@ class _LoginPageState extends State<LoginPage> {
                   // ignore: prefer_const_literals_to_create_immutables
                   children: [
                     Text(
-                      "kayitli degil misin?",
+                      "Kayitli degil misin?",
                       style: TextStyle(fontWeight: FontWeight.bold),
                     ),
                     Text(

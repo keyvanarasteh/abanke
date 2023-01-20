@@ -32,12 +32,11 @@ class _HomepageState extends State<Homepage> {
         onTap: _navigateBottomNavBar,
         type: BottomNavigationBarType.fixed,
         items: [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'home'),
-          BottomNavigationBarItem(icon: Icon(Icons.person), label: 'YOU'),
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+          BottomNavigationBarItem(icon: Icon(Icons.person), label: 'You'),
           BottomNavigationBarItem(
-              icon: Icon(Icons.video_call), label: 'page44'),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.settings), label: 'Settings'),
+              icon: Icon(Icons.video_call), label: 'Foto Yükle'),
+          BottomNavigationBarItem(icon: Icon(Icons.settings), label: 'Ayarlar'),
         ],
       ),
     );

@@ -58,7 +58,7 @@ class _VideosState extends State<Videos> {
             return Column(mainAxisSize: MainAxisSize.min, children: [
               CupertinoButton(
                   color: Colors.green,
-                  child: Text('foto yukle'),
+                  child: Text('Fotoğraf Yükle'),
                   onPressed: () {
                     showCupertinoModalPopup(
                         context: context, builder: buildsheet);
@@ -80,7 +80,7 @@ class _VideosState extends State<Videos> {
   Widget buildsheet(BuildContext context) => CupertinoActionSheet(
         actions: [
           CupertinoActionSheetAction(
-            child: Text('galeri'),
+            child: Text('Galeri'),
             onPressed: () => pickImage(),
             isDefaultAction: true,
           )
